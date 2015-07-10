@@ -14,10 +14,6 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $('#page_effect').fadeIn(2000);});
-</script>
 <script type="text/javascript">
 $(document).ready(function() {
     $( '.dropdown' ).hover(
@@ -28,36 +24,14 @@ $(document).ready(function() {
             $(this).children('.dropdown-menu').slideUp(200);
         }
     );
-});
+}); // end ready
 </script>
-    <script type="text/javascript">
-    $(document).ready(function (){
-    $("#page_effect").hover(function(){
-     $(this).find('img').attr("src", "images/ym3.psd");
-    });
-});
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function (){
-    $("#page_effect").hover(function(){
-     $(this).find('img').animate({height: '150px'}, 1000);
-    });
-});
-    </script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand/toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -72,7 +46,6 @@ $(document).ready(function() {
                     <li>
                         <a href="about.html">About</a>
                     </li>
-                    <!-- Dropdown menu-->
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Art <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -99,54 +72,75 @@ $(document).ready(function() {
         </div>
         <!-- /.container -->
     </nav>
+
     <!-- Page Content -->
     <div class="container">
-
-        <!-- YM icon -->
         <div class="row">
             <div class="col-lg-12">
-            <div id="page_effect" style="display:none;">
-                <h1 class="page-header" align="middle"> <img src="images/ym3.psd" height="100px">
+                <h1 class="page-header">Item
                 </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Portfolio Item</li>
+                </ol>
             </div>
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-       <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <h1 class="item active" align="middle"> <img src="images/clock_copy.jpg"></h1>
-    </div>
-    <div class="item">
-    <h1 class="item" align="middle"> <img src="images/ruby_earrings_copy.jpg"></h1>
-    </div>
-    <div class="item">
-     <h1 class="item" align="middle"> <img src="images/blue_bracelet_copy.jpg".jpg></h1>
-    </div>
-    <div class="item">
-    <h1 class="item" align="middle"> <img src="images/scroll_copy.jpg".jpg></h1>
-    </div>
-  </div>
+        </div>
+        <!-- /.row -->
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" src="images/vase.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="images/vaseback.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Object Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                <h3>Object Details</h3>
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Dolor Sit Amet</li>
+                    <li>Consectetur</li>
+                    <li>Adipiscing Elit</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- /.row -->
 
 
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; YM Antiques</p>
+                    <p>Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
         </footer>
